@@ -18,24 +18,6 @@ Extensive Visualization: Automated generation of ROC curves, Confusion Matrices,
 Experimental Results
 Our findings demonstrate that the Deep Autoencoder is the most robust model for capturing complex, non-linear relationships between sensors.
 
-Model,Accuracy,F1-Score,ROC-AUC
-Deep Autoencoder,95.8%,0.94,0.98
-Isolation Forest,88.5%,0.85,0.89
-One-Class SVM,81.2%,0.77,0.81
-
-Repository Structure
-├── models/                   # Saved model files (.h5 and .pkl)
-│   ├── autoencoder_best.h5   # Trained Deep Learning model
-│   ├── isolation_forest.pkl  # Trained Statistical model
-│   └── scaler.pkl            # Preprocessing parameters
-├── data/                     # Dataset (CSV)
-├── figures/                  # Generated plots and visualizations
-│   ├── confusion_matrices.png
-│   └── roc_curves.png
-├── results/                  # Performance logs and CSV reports
-├── iot-anomaly-detection.ipynb # Main research notebook
-└── README.md
-
 Installation & Usage
 1. Prerequisites
 Python 3.11+
