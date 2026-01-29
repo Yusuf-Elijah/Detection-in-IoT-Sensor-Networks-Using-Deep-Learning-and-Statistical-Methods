@@ -1,0 +1,46 @@
+======================================================================
+IoT SENSOR ANOMALY DETECTION - EXPERIMENT SUMMARY
+======================================================================
+
+Generated: 2026-01-29 08:42:52
+Dataset: /kaggle/input/irrigation-machine-dataset/irrigation_machine.csv
+Random Seed: 42
+
+DATA STATISTICS
+----------------------------------------------------------------------
+Total samples: 2,000
+Number of features: 24
+Training samples: 1,400
+  - Normal samples for training: 1,400
+Validation samples: 200
+Test samples: 400
+
+AUTOENCODER CONFIGURATION
+----------------------------------------------------------------------
+Encoding dimension: 32
+Dropout rate: 0.2
+Batch size: 32
+Epochs trained: 100
+Final training loss: 0.283142
+Final validation loss: 0.105556
+Anomaly threshold (95th percentile): 0.207892
+
+
+
+FILES GENERATED
+----------------------------------------------------------------------
+Models:
+  - models/autoencoder_best.h5
+  - models/isolation_forest.pkl
+  - models/one_class_svm.pkl
+  - models/scaler.pkl
+
+Results:
+  - results/performance_metrics.csv
+  - results/test_predictions.csv
+  - results/training_history.csv
+  - results/experiment_summary.json
+
+Figures:
+  - figures/training_history.png
+  - figures/reconstruction_error_distribution.png

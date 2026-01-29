@@ -1,0 +1,30 @@
+{
+    "experiment_info": {
+        "date": "2026-01-29 08:42:52",
+        "dataset": "/kaggle/input/irrigation-machine-dataset/irrigation_machine.csv",
+        "random_seed": 42,
+        "test_size": 0.2,
+        "validation_size": 0.1
+    },
+    "data_info": {
+        "total_samples": 2000,
+        "n_features": 24,
+        "train_samples": 1400,
+        "train_normal_samples": 1400,
+        "val_samples": 200,
+        "test_samples": 400
+    },
+    "autoencoder_config": {
+        "encoding_dim": 32,
+        "dropout_rate": 0.2,
+        "epochs_trained": 100,
+        "batch_size": 32,
+        "final_train_loss": 0.2831418812274933,
+        "final_val_loss": 0.10555624961853027,
+        "threshold": 0.20789247348552337
+    },
+    "baseline_config": {
+        "isolation_forest_contamination": 0.1,
+        "one_class_svm_nu": 0.1
+    }
+}
